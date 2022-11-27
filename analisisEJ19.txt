@@ -1,0 +1,31 @@
+Análisis de la página wed "MySkincare"
+
+A partir de señalar las observaciones a cada una de las páginas pertinentes, concluyo con una
+retroalimentación conjunta del análisis correspondiente.
+
+Partiendo con la documentación HTML, se observa que se establece una estructura semántica que 
+permite llevar un orden en cuanto al contenido de los elementos de la página. En esta primera 
+parte, cada uno de los documentos semánticos tiene un encabezado <heade>, un pie de página <footer>
+y una barra de navegación que es trabajada a partir de una etiqueta <div>, sin embargo, carece
+ de una etiqueta principal <main> que mermita la apertura del contenido introductorio. 
+
+Se puede observar que, en esta página de cuidados de la piel, gran parte del trabajo corresponde
+a diseño extraído de Bootstrap. Este framework, permite al desarrollador accesar al diseño de
+una página con los requerimientos deseados, sin la necesidad de iniciar desde cero; sin embrago,
+es recomendable hacer ciertos cambios por la cantidad de contenedores genéricos con los que trabaja,
+para este caso los diseñadores de la página no hicieron tal cambio, lo cual dificultará el mantenimiento
+y actualización de los documentos.
+
+También, una mala práctica de la que me pude percatar es la declaración de los elementos <script>
+al final del código, lo cual es válido, sin en cambio, si el <script> esta en la cabecera, se
+ejecutara antes de que los elementos existan a menos que se añada el atributo “defer”. 
+
+En las hojas de estilo en cascada, en términos generales, no lleva una semántica bien estructurada,
+para esto, es necesario unificar estilos que permite hacer los mismos cambios de manera conjunta a 
+aquellas particularidades que comparten características. Y evitar la redundancia en las propiedades, 
+es decir, si hay dos o más selectores que aplican las mismas propiedades, no duplicarlas, mejor 
+combinar los relectores.Finalmente, resulta útil añadir comentario para dar a conocer que está 
+haciendo en tal sección, o etiqueta o clase si fuera el caso. 
+
+En los script de JS, hay mucha ambigüedad en el código, lo cual resulta difícil de comprender, además
+de hacer llamados externos a páginas que no se especifica su utilidad. 
